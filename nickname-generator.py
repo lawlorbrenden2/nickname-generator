@@ -15,15 +15,15 @@ with open('animals.txt') as f:
 
 random_adjective = random.choice(adjectives)
 random_animal = random.choice(animals)
-random_3_digit = random.randint(1, 99)
+random_2_digit = random.randint(1, 99)
 
-if random_3_digit < 10:
-    random_3_digit = str(random_3_digit)
-    random_3_digit = '0' + random_3_digit
+if random_2_digit < 10:
+    random_2_digit = str(random_2_digit)
+    random_2_digit = '0' + random_2_digit
 else:
-    random_3_digit= (str(random_3_digit))
+    random_2_digit= (str(random_2_digit))
 
-nickname = random_adjective + random_animal + random_3_digit
+nickname = random_adjective + random_animal + random_2_digit
 
 print(f"Your nickname is {nickname}")
 
